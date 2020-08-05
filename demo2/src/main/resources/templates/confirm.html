@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>結果</title>
+</head>
+<body>
+
+<form method="post" action="#" th:action="@{/save}" th:object="${inquiryForm}">
+  <input name="name" th:value="*{name}">
+  <input name="email" th:value="*{email}">
+  <input name="contents" th:value="*{contents}">
+  <input type="submit" value="送信">
+</form>
+	
+</body>
+</html>
